@@ -1,1 +1,85 @@
-<h1>hello!</h1>
+
+<!DOCTYPE html>
+
+
+
+	<head>
+		<title>idddeo</title>
+		<meta charset="utf-8">
+
+		<meta property="og:title" content="idddeo">
+		<meta property="og:description" content="third dimensional dance">
+		<meta property="og:image" content="img/cover2.jpg">
+		<meta property="og:url" content="http://fuzzy.cc/3deo/">
+
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+		<script>
+			if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+			  window.location = "nomobile.html";
+			}
+		</script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/howler.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body>
+
+		<canvas id="canvas_menu"></canvas>
+		<canvas id="canvas_dancer"></canvas>
+		<canvas id="canvas_group"></canvas>
+		<canvas id="canvas_group2"></canvas>
+
+		<div class="about">About</div>
+		<div class="change_dancer">Main Menu</div>
+		<div class="control_instructions centerx"><i>SCROLL</i> &nbsp;to&nbsp; ZOOM &nbsp;|&nbsp; <i>CLICK+MOVE</i> &nbsp;to&nbsp; ROTATE &nbsp;|&nbsp; <i>ALT+MOVE</i> &nbsp;to&nbsp; PAN</div>
+
+		<div class="equalizer centerx"><img src="jpg/eqalizer3.gif" width="15"> &nbsp;TURN SOUND UP&nbsp; <img src="jpg/eqalizer3.gif" width="15"></div>
+		
+		<div class="about_content centerxy">
+			This is an experiment with 3D/AR/VR/WEB by Fuzzy Wobble @ IDEO NY and Danny Deruntz @ IDEO Cambridge.  
+			We scanned some colleagues with (what is clearly) an off-the-shelf scanner. 
+			We then programatically puppeteered them to dance using existing motion capture data. 
+			<br>Check out <a href="https://youtu.be/vHZtRJsGyDA" target="_blank">AR Demo 1</a> and <a href="https://youtu.be/wzirG_uhlWs" target="_blank">AR Demo 2</a>.
+			<div class="close_about">X</div>
+		</div>
+
+		<div class="loading">
+			<div class="small_loading centerxy">3 D &nbsp;&nbsp; L O A D I N G &nbsp;&nbsp; B E &nbsp;&nbsp; C H I L L</div>
+		</div>
+
+		<div id="vid"></div>
+
+		<div id="grad_bg" class="grad_0"></div>
+
+		<div class="whiteout">
+			<div class="small_loading centerxy">3 D &nbsp;&nbsp; L O A D I N G &nbsp;&nbsp; B E &nbsp;&nbsp; C H I L L</div>
+		</div>
+
+		<script src="https://threejs.org/build/three.js"></script>
+		<script src="https://threejs.org/examples/js/controls/TrackballControls.js"></script>
+		<script src="http://fuzzy.cc/3deo/js/three-addons/object-controls/ObjectControls.js"></script>
+		<script src="http://fuzzy.cc/3deo/js/three-addons/OrbitControls2.js"></script>
+		<script src="https://threejs.org/examples/js/Detector.js"></script>
+		<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+		<script src="http://fuzzy.cc/ar_new/three-dev-2/examples/js/loaders/ColladaLoader.js"></script>
+
+		<script src="global.js"></script>
+		<script src="menu.js"></script>
+		<script src="single.js"></script>
+		<script src="group.js"></script>
+		<script src="group2.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
